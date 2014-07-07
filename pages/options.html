@@ -2,22 +2,33 @@
   <head>
     <title>Unstyled</title>
     <link rel="stylesheet" type="text/css" href="../styles/options.css" />
+    <link rel="stylesheet" type="text/css" href="../vendor/css/spectrum.css" />
     </style>
   </head>
   <body>
     <div>
       <h1>Unstyled options</h1>
-      <div class="notice">
-        <strong>Warning!</strong>
-        Only link styles are removed. Other styles remain in place.
-      </div>
-      Remove styles for which urls?<br/>
-      <textarea id="urls"></textarea>
-      <div id="buttons">
+
+      <div class="form-row">
+        <label>Remove styles for which urls?</label>
+        <textarea id="urls"></textarea>
         <span class="help-text">e.g. http://allthingscraig.com/*</span>
+      </div>
+      <div class="form-row">
+        <label>What color should the visited links be? (Purple is the default in most browsers)</label>
+        <br/>
+        <input type="text" id="color" />
+      </div>
+
+      <div id="buttons">
         <button id="save">Save</button>
       </div>
+
     </div>
+
+    <script type="text/javascript" src="../vendor/js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="../vendor/js/spectrum.js"></script>
+
     <script type="text/javascript" src="../lib/settings.js"></script>
     <script type="text/javascript" src="../lib/options.js"></script>
   </body>
