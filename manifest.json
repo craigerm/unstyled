@@ -1,6 +1,6 @@
 {
   "name": "Unstyled",
-  "version": "0.2",
+  "version": "0.3",
   "manifest_version": 2,
   "description": "Remove styling for links",
   "background": {
